@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xmly.media.video.view.XMImageView
+        android:id="@+id/image_view"
+        android:layout_width="400dp"
+        android:layout_height="225dp" />
+
+    <com.xmly.media.video.view.XMDecoderView
+        android:id="@+id/decoder_view"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="camera" />
+
+        <Button
+            android:id="@+id/button_choose_filter"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Choose Filter" />
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Player" />
+
+        <Button
+            android:id="@+id/button_decode"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="合成" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/filter_list"
+        android:layout_above="@id/bar"
+        layout="@layout/base_filter_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+</RelativeLayout>

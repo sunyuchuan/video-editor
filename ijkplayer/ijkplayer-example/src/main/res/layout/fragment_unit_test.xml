@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tv.danmaku.ijk.media.example.fragments.UnitTestFragment">
+
+    <Button
+        android:id="@+id/hw_aac_encoder_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/hw_aac_encoder_test" />
+
+    <Button
+        android:id="@+id/dub_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/dub_test" />
+
+    <Button
+        android:id="@+id/pip_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/pip_test" />
+
+    <Button
+        android:id="@+id/concat_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/concat_test" />
+
+    <Button
+        android:id="@+id/burn_subtitle_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/burn_subtitle_test" />
+
+    <Button
+        android:id="@+id/pip_subtitle_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/pip_subtitle_test" />
+</LinearLayout>
