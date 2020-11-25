@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.view.SurfaceView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/pip_view"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="相机预览" />
+
+        <Button
+            android:id="@+id/btn_switch"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="相机切换" />
+
+        <Button
+            android:id="@+id/btn_choose_filter"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="选择滤镜" />
+
+        <Button
+            android:id="@+id/btn_decode"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="离线合成" />
+
+        <Button
+            android:id="@+id/btn_player"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="播放器录制" />
+
+        <Button
+            android:id="@+id/btn_image"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="图片转视频" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/filter_list"
+        android:layout_above="@id/bar"
+        layout="@layout/base_filter_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+</RelativeLayout>

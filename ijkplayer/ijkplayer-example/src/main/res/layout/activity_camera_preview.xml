@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xmly.media.camera.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/camera_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:background="@drawable/ugc_switch_camera_hover" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/beauty_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/camera_recorder"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-94dp"
+            android:background="@drawable/ugc_record_beautiful_girl_hover" />
+
+        <ImageView
+            android:id="@+id/camera_recorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/start_record" />
+    </RelativeLayout>
+</RelativeLayout>

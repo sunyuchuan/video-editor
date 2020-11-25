@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="entrySummaries" format="reference" />
+
+    <declare-styleable name="IjkListPreference">
+        <attr name="entrySummaries" />
+    </declare-styleable>
+
+    <declare-styleable name="srtView">
+        <attr name="hignLineColor" format="color|reference"/>
+        <attr name="srtColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="audioWaveView">
+        <attr name="waveColor" format="color" />
+        <attr name="waveCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="circlerView">
+        <attr name="name" format="string"/>
+    </declare-styleable>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+</resources>
